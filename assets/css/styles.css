@@ -47,6 +47,21 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.word-break-all {
+    word-break: break-all;
+}
 /* ======Header========= */
 .header {
     background-color: #fffcf4;
@@ -250,7 +265,7 @@ a {
     align-items: center;
     display: flex;
     border: none;
-    background-color: #fff;
+    background-color: #fffcf4;
 }
 
 .hero .watch-video .icon-video {
@@ -326,7 +341,7 @@ a {
     color: #171100;
 }
 
-.popular .desc {
+.popular .popular-top .desc {
     margin-top: 16px;
     width: 458px;
     height: 60px;
@@ -359,4 +374,84 @@ a {
     background-color: var(--color-yellow);
     color: #fff;
     cursor: pointer;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    background: #ffffff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+}
+
+.popular .course-item .thumb {
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+    height: 278px;
+    object-fit: cover;
+}
+
+.popular .course-list .info {
+    padding: 16px 22px;
+}
+
+.popular .course-list .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    padding-right: 8px;
+    color: #171100;
+}
+
+.popular .course-list .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .course-list .desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    /* or 186% */
+
+    color: #5f5b53;
+}
+
+.popular .course-list .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.popular .foot .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #171100;
+}
+
+.popular .course-item .book-btn {
+    border: none;
+}
+
+.popular .course-item .book-btn:hover {
+    background-color: var(--color-yellow);
+    color: #fff;
+    cursor: pointer;
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.1);
 }
