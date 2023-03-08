@@ -53,6 +53,7 @@ a {
 }
 
 .header.fixed {
+    z-index: 100;
     position: sticky;
     top: -28px;
 }
@@ -131,10 +132,11 @@ a {
     height: 685px;
     border-radius: 20px;
     object-fit: cover;
+    vertical-align: bottom;
 }
 .hero .hero-summary {
     width: 270px;
-    height: 244px;
+    /* height: 244px; */
 
     background: #ffffff;
 }
@@ -164,7 +166,7 @@ a {
 
 .hero .hero-summary {
     /* position: absolute; */
-    padding: 28px 24px;
+    padding: 24px 24px;
     border-radius: 12px;
 }
 
