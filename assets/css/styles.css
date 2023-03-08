@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 1.6rem;
+    font-family: "Fasthand", cursive;
+    font-family: "Island Moments", cursive;
+    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* Comon */
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    min-width: 118px;
+    line-height: 50px;
+    text-align: center;
+    background: #171100;
+    border-radius: 24.5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+/* ======Header========= */
+.header {
+    background-color: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0px 8px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav a {
+    /* background: #333; */
+    position: relative;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+    padding: 8px 21px;
+}
+.nav a:hover,
+.nav li.active a {
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+    font-size: 1.6rem;
+    /* identical to box height, or 175% */
+    text-align: center;
+    color: #171100;
+}
+
+.nav li.active a::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    left: 21px;
+    bottom: 6px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 50px;
+}
